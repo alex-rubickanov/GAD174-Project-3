@@ -36,16 +36,15 @@ public class Weapon : MonoBehaviour {
     public AudioClip soundOn;
     public AudioClip soundOff;
     public AudioClip soundLoop;
-    public AudioClip soundSwing;
+    
 
-    public AudioSource AudioSource;
-    public AudioSource AudioSourceLoop;
-    public AudioSource AudioSourceSwing;
+    [HideInInspector] public AudioSource AudioSource;
+    [HideInInspector] public AudioSource AudioSourceLoop;
+    
     
 
     // swinging: used for later, but should work currently anyway
-    private float swingSpeed = 0;
-    private Vector3 lastSwingPosition = Vector3.zero;
+    
 
     /// <summary>
     /// The key for toggling the weapon's active state
@@ -250,52 +249,10 @@ public class Weapon : MonoBehaviour {
         // light and blade color
         // only for testing dynamic colors, works.
         // UpdateColor();
-
-        // swing speed
-        updateSwingHandler();
-
-
     }
 
     // calculate swing speed
-    private void updateSwingHandler()
-    {
-        // calculate speed
-        swingSpeed = (((transform.position - lastSwingPosition).magnitude) / Time.deltaTime);
-
-        // remember last position
-        lastSwingPosition = transform.position;
-
-        // swing sound
-        // a probably better solution would be to play the swing sound permanently and only fade the volume in and out depending on the swing speed
-        if (weaponActive)
-        {
-            // if certain swing speed is reached, play swing audio sound. if swinging stopped, fade the volume out
-            if (swingSpeed > 0.8) // just random swing values; should be more generic
-            {
-                if (!AudioSourceSwing.isPlaying)
-                {
-                    AudioSourceSwing.volume = 1f;
-                    AudioSourceSwing.PlayOneShot(soundSwing);
-                }
-            }
-            else
-            {
-
-                // fade out volume
-                if(AudioSourceSwing.isPlaying && AudioSourceSwing.volume > 0)
-                {
-                    AudioSourceSwing.volume *= 0.9f; // just random swing values; should be more generic
-                }
-                else
-                {
-                    AudioSourceSwing.volume = 0;
-                    AudioSourceSwing.Stop();
-                }
-
-            }
-        }
-    }
+   
 
     private void ToggleWeaponOnOff()
     {

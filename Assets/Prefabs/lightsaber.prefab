@@ -410,7 +410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7722840720777354551}
   m_Layer: 0
-  m_Name: Lightsaber
+  m_Name: lightsaber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -425,7 +425,7 @@ Transform:
   m_GameObject: {fileID: 7722840720777354549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 7722840721046709366}
   - {fileID: 3227019120836907541}
@@ -482,13 +482,11 @@ MonoBehaviour:
   bladeColor: {r: 0.01568625, g: 0.5254902, b: 0.99215686, a: 1}
   bladeColorIntensity: 1
   lightIntensity: 1
-  soundOn: {fileID: 0}
-  soundOff: {fileID: 0}
-  soundLoop: {fileID: 0}
-  soundSwing: {fileID: 0}
+  soundOn: {fileID: 8300000, guid: 8f816b0544da09546ac1316e5416bc20, type: 3}
+  soundOff: {fileID: 8300000, guid: 8f816b0544da09546ac1316e5416bc20, type: 3}
+  soundLoop: {fileID: 8300000, guid: 8f816b0544da09546ac1316e5416bc20, type: 3}
   AudioSource: {fileID: 0}
   AudioSourceLoop: {fileID: 0}
-  AudioSourceSwing: {fileID: 0}
 --- !u!1 &7722840721175256700
 GameObject:
   m_ObjectHideFlags: 0
