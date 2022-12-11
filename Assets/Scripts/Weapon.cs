@@ -38,8 +38,8 @@ public class Weapon : MonoBehaviour {
     public AudioClip soundLoop;
     
 
-    [HideInInspector] public AudioSource AudioSource;
-    [HideInInspector] public AudioSource AudioSourceLoop;
+    public AudioSource AudioSourceOnOff;
+    public AudioSource AudioSourceLoop;
     
     
 
@@ -275,7 +275,7 @@ public class Weapon : MonoBehaviour {
         }
             
 
-        AudioSource.PlayOneShot(soundOn);
+        AudioSourceOnOff.PlayOneShot(soundOn);
         AudioSourceLoop.clip = soundLoop;
         AudioSourceLoop.Play();
 
@@ -288,7 +288,7 @@ public class Weapon : MonoBehaviour {
             blade.SetActive(false);
         }
 
-        AudioSource.PlayOneShot(soundOff);
+        AudioSourceOnOff.PlayOneShot(soundOff);
         AudioSourceLoop.Stop();
 
     }
@@ -315,7 +315,7 @@ public class Weapon : MonoBehaviour {
            
         }
 
-        this.weaponActive = active;
+        this.weaponActive = active; 
     }
 
 }
