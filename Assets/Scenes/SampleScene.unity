@@ -362,11 +362,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 773dea4f98cbeb545b22ba87afc02b27, type: 3}
---- !u!4 &482856580 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 482856580, guid: e12cbacee6f9b8647b9aaf2d0553ca99, type: 3}
-  m_PrefabInstance: {fileID: 6680142479907951309}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &766920437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -625,6 +620,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237628665}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< Updated upstream
 --- !u!1001 &1438951290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -836,76 +832,35 @@ VideoPlayer:
   m_VideoShaders: []
 --- !u!82 &534186786908746578
 AudioSource:
+=======
+--- !u!1001 &6680142479907951309
+PrefabInstance:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534186786908746576}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.64
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6680142480442064592, guid: e12cbacee6f9b8647b9aaf2d0553ca99, type: 3}
+      propertyPath: m_Name
+      value: Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571786805739947959, guid: e12cbacee6f9b8647b9aaf2d0553ca99, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571786805739947959, guid: e12cbacee6f9b8647b9aaf2d0553ca99, type: 3}
+      propertyPath: m_LocalPosition.x
       value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571786805739947959, guid: e12cbacee6f9b8647b9aaf2d0553ca99, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8571786805739947959, guid: e12cbacee6f9b8647b9aaf2d0553ca99, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
+<<<<<<< Updated upstream
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1315,6 +1270,8 @@ PrefabInstance:
     - target: {fileID: 8571786805739947959, guid: e12cbacee6f9b8647b9aaf2d0553ca99, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+=======
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 8571786805739947959, guid: e12cbacee6f9b8647b9aaf2d0553ca99, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1346,6 +1303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e12cbacee6f9b8647b9aaf2d0553ca99, type: 3}
+<<<<<<< Updated upstream
 --- !u!1 &6811151371021469193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,3 +1371,5 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534186786908746576}
   m_Mesh: {fileID: -1875780437015597444, guid: adf4211cdd41d5941bc7ce9702543a20, type: 3}
+=======
+>>>>>>> Stashed changes
