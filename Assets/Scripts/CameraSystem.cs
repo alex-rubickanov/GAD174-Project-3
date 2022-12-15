@@ -8,7 +8,7 @@ public class CameraSystem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("[6]"))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             CameraPositions[0].SetActive(true);
             CameraPositions[1].SetActive(false);
@@ -16,7 +16,7 @@ public class CameraSystem : MonoBehaviour
             CameraPositions[3].SetActive(false);
         }
 
-        if (Input.GetKeyDown("[4]"))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             CameraPositions[0].SetActive(false);
             CameraPositions[1].SetActive(false);
@@ -24,7 +24,7 @@ public class CameraSystem : MonoBehaviour
             CameraPositions[3].SetActive(false);
         }
 
-        if (Input.GetKeyDown("[5]"))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             CameraPositions[0].SetActive(false);
             CameraPositions[1].SetActive(true);
@@ -32,7 +32,7 @@ public class CameraSystem : MonoBehaviour
             CameraPositions[3].SetActive(false);
         }
 
-        if (Input.GetKeyDown("[8]"))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             CameraPositions[0].SetActive(false);
             CameraPositions[1].SetActive(false);
