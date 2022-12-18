@@ -49,7 +49,7 @@ public class Weapon : MonoBehaviour {
     /// <summary>
     /// The key for toggling the weapon's active state
     /// </summary>
-    private KeyCode TOGGLE_KEY_CODE = KeyCode.Space;
+    
 
     /// <summary>
     /// The color property in the shader. This will receive the color set via this script.
@@ -236,12 +236,7 @@ public class Weapon : MonoBehaviour {
 	void Update () {
         
         // key pressed
-        if (Input.GetKeyDown(TOGGLE_KEY_CODE))
-        {
-
-            ToggleWeaponOnOff();
-
-        }
+       
 
         UpdateBlades();
 
@@ -254,7 +249,7 @@ public class Weapon : MonoBehaviour {
     // calculate swing speed
    
 
-    private void ToggleWeaponOnOff()
+    public void ToggleWeaponOnOff()
     {
         if (weaponActive)
         {
