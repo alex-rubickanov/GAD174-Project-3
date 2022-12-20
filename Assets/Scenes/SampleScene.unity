@@ -267,6 +267,9 @@ MonoBehaviour:
   - {fileID: 915502248}
   - {fileID: 934416192}
   - {fileID: 74097863}
+  buttons:
+  - {fileID: 870625409}
+  - {fileID: 552481094}
 --- !u!4 &193821915
 Transform:
   m_ObjectHideFlags: 0
@@ -798,7 +801,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &552481095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1160,7 +1163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &870625410
 RectTransform:
   m_ObjectHideFlags: 0
