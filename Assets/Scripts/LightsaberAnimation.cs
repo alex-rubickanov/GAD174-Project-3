@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class LightsaberAnimation : MonoBehaviour
 {
-    Animator animator;
+    [HideInInspector]public Animator animator;
     Weapon blade;
     [SerializeField] GameObject bladeButton;
-    [SerializeField] GameObject lukeUI;
+    [SerializeField] public GameObject lukeUI;
     [SerializeField] Animator lukePhotoAnimator;
     //[SerializeField] Animator textAnimator;
     [SerializeField] GameObject text;

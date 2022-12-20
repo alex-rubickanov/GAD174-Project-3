@@ -6,8 +6,9 @@ public class CameraSystem : MonoBehaviour
 {
     [SerializeField] GameObject[] CameraPositions;
     [SerializeField] GameObject[] buttons;
+    [SerializeField] LightsaberAnimation lightsaberAnimation;
 
-    public void Camera0()
+    public void Camera0() //from door
     {
 
             CameraPositions[0].SetActive(true);
@@ -16,8 +17,10 @@ public class CameraSystem : MonoBehaviour
             CameraPositions[3].SetActive(false);
             buttons[0].SetActive(false); //remote
             buttons[1].SetActive(false); //lightsaber
+            lightsaberAnimation.animator.SetBool("State", false);
+            lightsaberAnimation.lukeUI.SetActive(false);
     }
-    public void Camera1()
+    public void Camera1() //trophies
     {
 
             CameraPositions[0].SetActive(false);
@@ -28,7 +31,7 @@ public class CameraSystem : MonoBehaviour
             buttons[0].SetActive(false); //remote
     }
 
-    public void Camera2()
+    public void Camera2() //couch
     {
 
             CameraPositions[0].SetActive(false);
@@ -37,8 +40,10 @@ public class CameraSystem : MonoBehaviour
             CameraPositions[3].SetActive(false);
             buttons[0].SetActive(true); //remote
             buttons[1].SetActive(false); //lightsaber
+            lightsaberAnimation.animator.SetBool("State", false);
+            lightsaberAnimation.lukeUI.SetActive(false);
     }
-    public void Camera3()
+    public void Camera3() //tv
     {
 
             CameraPositions[0].SetActive(false);
@@ -47,5 +52,8 @@ public class CameraSystem : MonoBehaviour
             CameraPositions[3].SetActive(true);
             buttons[0].SetActive(false); //remote
             buttons[1].SetActive(false); //lightsaber
+            lightsaberAnimation.animator.SetBool("State", false);
+            lightsaberAnimation.lukeUI.SetActive(false);
+      
     }
 }

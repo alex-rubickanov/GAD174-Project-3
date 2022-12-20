@@ -402,6 +402,7 @@ MonoBehaviour:
   buttons:
   - {fileID: 383567446}
   - {fileID: 552481094}
+  lightsaberAnimation: {fileID: 852138088}
 --- !u!4 &193821915
 Transform:
   m_ObjectHideFlags: 0
@@ -1955,6 +1956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8e58abb7f081944898d36fca6f6426d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   bladeButton: {fileID: 921131149}
   lukeUI: {fileID: 1376132493}
   lukePhotoAnimator: {fileID: 467675224}
@@ -4108,7 +4110,7 @@ GameObject:
   - component: {fileID: 1822561578}
   - component: {fileID: 1822561577}
   m_Layer: 5
-  m_Name: Button
+  m_Name: FlipButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
