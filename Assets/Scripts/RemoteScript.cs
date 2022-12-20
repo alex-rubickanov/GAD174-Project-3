@@ -18,6 +18,7 @@ public class RemoteScript : MonoBehaviour
     {
         animator.SetTrigger("Power");
         tvScreen[1].enabled = false;
+        tvScreen[2].enabled = false;
         if (tvScreen[0].enabled == false)
         {
             tvScreen[0].enabled = true;
@@ -32,6 +33,7 @@ public class RemoteScript : MonoBehaviour
     {
         animator.SetTrigger("Power");
         tvScreen[0].enabled = false;
+        tvScreen[2].enabled = false;
         if (tvScreen[1].enabled == false)
         {
             tvScreen[1].enabled = true;
@@ -39,6 +41,21 @@ public class RemoteScript : MonoBehaviour
         else
         {
             tvScreen[1].enabled = false;
+        }
+
+    }
+    public void PlayPlaystation()
+    {
+        animator.SetTrigger("Power");
+        tvScreen[0].enabled = false;
+        tvScreen[1].enabled = false;
+        if (tvScreen[2].enabled == false)
+        {
+            tvScreen[2].enabled = true;
+        }
+        else
+        {
+            tvScreen[2].enabled = false;
         }
 
     }
