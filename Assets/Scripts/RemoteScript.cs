@@ -7,7 +7,7 @@ public class RemoteScript : MonoBehaviour
 {
     Animator animator;
 
-    [SerializeField] VideoPlayer tvScreen;
+    [SerializeField] VideoPlayer [] tvScreen;
 
     void Start()
     {
@@ -17,17 +17,32 @@ public class RemoteScript : MonoBehaviour
     public void PowerOn()
     {
         animator.SetTrigger("Power");
-
-        if(tvScreen.enabled == false)
+        tvScreen[1].enabled = false;
+        if (tvScreen[0].enabled == false)
         {
-            tvScreen.enabled = true;
+            tvScreen[0].enabled = true;
         }
         else
         {
-            tvScreen.enabled = false;
+            tvScreen[0].enabled = false;
+        }
+
+    }
+    public void PlayNintendo()
+    {
+        animator.SetTrigger("Power");
+        tvScreen[0].enabled = false;
+        if (tvScreen[1].enabled == false)
+        {
+            tvScreen[1].enabled = true;
+        }
+        else
+        {
+            tvScreen[1].enabled = false;
         }
 
     }
 
-  
+
+
 }
