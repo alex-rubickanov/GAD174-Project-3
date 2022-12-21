@@ -32,7 +32,7 @@ public class RemoteScript : MonoBehaviour
 
     private void ZoomRemote()
     {
-        if (camera1.active == true)
+        if (camera1.activeSelf == true)
         {
             animator.SetBool("ZoomRemote", true);
         }
@@ -47,7 +47,7 @@ public class RemoteScript : MonoBehaviour
         videoNumber = 0;
         animator.SetTrigger("Power");
 
-        if (tvBlckScreen.active == true && tvPlayer.active == false)
+        if (tvBlckScreen.activeSelf == true && tvPlayer.activeSelf == false)
         {
             tvBlckScreen.SetActive(false);
             tvPlayer.SetActive(true);
@@ -64,7 +64,7 @@ public class RemoteScript : MonoBehaviour
     {
         animator.SetTrigger("next");
 
-        if (tvPlayer.active == true)
+        if (tvPlayer.activeSelf == true)
         {
             videoNumber++;
         }
@@ -79,7 +79,7 @@ public class RemoteScript : MonoBehaviour
     {
         animator.SetTrigger("prev");
 
-        if (tvPlayer.active == true)
+        if (tvPlayer.activeSelf == true)
         {
             videoNumber--;
         }
@@ -94,29 +94,29 @@ public class RemoteScript : MonoBehaviour
     {
         if (videoNumber == 0)
         {
-            tvVideos[0].active = true;
-            tvVideos[1].active = false;
-            tvVideos[2].active = false;
-            tvVideos[3].active = false;
-            tvVideos[4].active = false;
+            tvVideos[0].SetActive(true);
+            tvVideos[1].SetActive(false);
+            tvVideos[2].SetActive(false); ;
+            tvVideos[3].SetActive(false);
+            tvVideos[4].SetActive(false);
 
         }
         else if (videoNumber == 1)
         {
-            tvVideos[0].active = false;
-            tvVideos[1].active = true;
-            tvVideos[2].active = false;
-            tvVideos[3].active = false;
-            tvVideos[4].active = false;
+            tvVideos[0].SetActive(false);
+            tvVideos[1].SetActive(true);
+            tvVideos[2].SetActive(false);
+            tvVideos[3].SetActive(false);
+            tvVideos[4].SetActive(false);
 
         }
         else if (videoNumber == 2)
         {
-            tvVideos[0].active = false;
-            tvVideos[1].active = false;
-            tvVideos[2].active = true;
-            tvVideos[3].active = false;
-            tvVideos[4].active = false;
+            tvVideos[0].SetActive(false);
+            tvVideos[1].SetActive(false);
+            tvVideos[2].SetActive(true); ;
+            tvVideos[3].SetActive(false);
+            tvVideos[4].SetActive(false);
 
         }
     }
@@ -124,7 +124,7 @@ public class RemoteScript : MonoBehaviour
     public void MuteTV()
     {
         animator.SetTrigger("mute");
-        if (muteIcon.active  == false && tvPlayer.active == true)
+        if (muteIcon.activeSelf  == false && tvPlayer.activeSelf == true)
         {
             tvAudio.mute = true;
             muteIcon.SetActive(true);
@@ -139,26 +139,26 @@ public class RemoteScript : MonoBehaviour
     public void PlayNintendo()
     {
         videoNumber = 4;
-        if (tvPlayer.active == true)
+        if (tvPlayer.activeSelf == true)
         {
-            tvVideos[0].active = false;
-            tvVideos[1].active = false;
-            tvVideos[2].active = false;
-            tvVideos[3].active = true;
-            tvVideos[4].active = false;
+            tvVideos[0].SetActive(false);
+            tvVideos[1].SetActive(false);
+            tvVideos[2].SetActive(false);
+            tvVideos[3].SetActive(true);
+            tvVideos[4].SetActive(false);
         }
     }
 
     public void PlayPS5()
     {
         videoNumber = -1;
-        if (tvPlayer.active == true)
+        if (tvPlayer.activeSelf == true)
         {
-            tvVideos[0].active = false;
-            tvVideos[1].active = false;
-            tvVideos[2].active = false;
-            tvVideos[3].active = false;
-            tvVideos[4].active = true;
+            tvVideos[0].SetActive(false);
+            tvVideos[1].SetActive(false);
+            tvVideos[2].SetActive(false);
+            tvVideos[3].SetActive(false);
+            tvVideos[4].SetActive(true);
         }
     }
 }
