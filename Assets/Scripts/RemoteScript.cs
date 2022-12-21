@@ -14,6 +14,8 @@ public class RemoteScript : MonoBehaviour
     [SerializeField] GameObject tvPlayer;
     [SerializeField] AudioSource tvAudio;
     [SerializeField] GameObject muteIcon;
+    [SerializeField] AudioClip remoteBtn;
+    AudioSource audioSource;
 
     int videoNumber = 0;
 
@@ -21,6 +23,7 @@ public class RemoteScript : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();    
+        audioSource = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -159,5 +162,12 @@ public class RemoteScript : MonoBehaviour
             tvVideos[3].SetActive(false);
             tvVideos[4].SetActive(true);
         }
+    }
+
+    //sound btn
+
+    public void playButtonSound()
+    {
+        audioSource.PlayOneShot(remoteBtn);
     }
 }
